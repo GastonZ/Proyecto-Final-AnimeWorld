@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background: #273036;
+    height: 10vh;
+}
+
+.nav .navbar {
+    padding: 12px;
+}
+
+.nav .navbar h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    transition: 500ms;
+}
+ul li a:hover {
+    color: red;
+}
+
+.title {
+    cursor: pointer;
+    color: white;
+    transition: 500ms;
+}
+.title:hover {
+    color: red;
+}
+
+.carousel .carousel-item {
+    height: 90vh;
+}
+.carousel .carousel-item img {
+    height: 90vh;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.offcanvas-header {
+    background: #273036;
+    color: #fff;
+}
+
+.offcanvas-content {
+    background: #394146;
+}
+
+.click {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.flecha {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    cursor: pointer;
+
+    animation-name: upanddown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    transform: rotateX(-135);
+}
+.flecha.derecha {
+    transform: rotate(135deg);
+}
+
+@keyframes upanddown{
+    0%, 100% {
+        bottom: 60px;
+      }
+      50% {
+        bottom: 80px;
+      }
+}
+
+#clickme {
+    position: absolute;
+    right: 48%;
+    height: 300px;
+    top: 70%;
+    z-index: 2;
+    color: red;
+    transition: 500ms;
+} 
+
+
+@media screen and (max-width: 576px) {
+    
+    .canvas {
+        display: flex;
+        padding: 10px;
+        background: #273036;
+    }
+
+    .hamburger {
+        background: #273036;
+    }
+
+    .line {
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            margin: 5px;
+    }
+    
+    .title-sm {
+        display: flex;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+    .links-canvas {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        font-size: 1.5rem;
+    }
+    .links-canvas .links-sm {
+        justify-content: center;
+        padding: 5rem;
+        border-radius: 10px;
+    }
+    .links-canvas .links-sm:hover{
+        background: #273036;
+    }
+}
