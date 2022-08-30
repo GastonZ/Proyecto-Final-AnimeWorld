@@ -1,0 +1,32 @@
+html {
+    background: #585b5e;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    height: auto;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    font-size: 1.3rem;
+    background: #273036;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.form {
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background: #585b5e;
+}
+
+.form:focus {
+    border: red solid;
+    outline: none;
+    background: #fff;
+}
