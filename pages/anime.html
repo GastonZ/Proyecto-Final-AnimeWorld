@@ -11,7 +11,7 @@
         <script src="https://kit.fontawesome.com/4a6cf95f22.js" crossorigin="anonymous"></script>
         <title>Anime World</title>
     </head>
-    <body>
+    <body class="body">
         <header>
             <div class="canvas">
                 <button class="hamburger btn d-sm-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
@@ -25,9 +25,9 @@
                 <div class="navbar">
                     <h1 class="title">Anime world</h1>
                     <ul class="row">
-                        <li id="links" class="links col d-flex"><a href="pages/about.html">About</a></li>
-                        <li id="links" class="links col d-flex"><a href="pages/shop.html">Shop</a></li>
-                        <li id="links" class="links col d-flex"><a href="pages/anime.html">Anime</a></li>
+                        <li id="links" class="links col d-flex"><a href="about.html">About</a></li>
+                        <li id="links" class="links col d-flex"><a href="shop.html">M.A.L</a></li>
+                        <li id="links" class="links col d-flex"><a href="anime.html">Anime</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,22 +39,26 @@
                 <div class="offcanvas-content">
                     <ul class="links-canvas col">
                         <li id="links" class="links-sm col d-flex"><a href="">About</a></li>
-                        <li id="links" class="links-sm col d-flex"><a href="">Shop</a></li>
+                        <li id="links" class="links-sm col d-flex"><a href="">M.A.L</a></li>
                         <li id="links" class="links-sm col d-flex"><a href="/anime.html">Anime</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-    <main>
-        <form id="search-form" class="input-group mb-3 p-5">
-            <span class="text"><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input placeholder="search anime" name="search" id="search" type="text" class="search validate">
-        </form>
-    </main>
-    <section id="search-results" class="container">
-        
-    </section>
-        <script src="/anime.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <main>
+            <form id="search-form" class="input-group mb-3 p-5">
+                <span id="search-form" class="text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input placeholder="search anime" name="search" id="search" type="text" class="search validate">
+            </form>
+        </main>
+        <section id="search-results" class="container-card container">
+            <div class="container-konata">
+                <img class="konata" src="img-pages/konata.webp" alt="Konata te dice que busques anime"> 
+                <h3> Next, use the search engine <br> to find the <strong>anime </strong>you want <br> it can be by name or genre !</h3> 
+            </div>
+        </section>
+            <script src="anime.js"></script>
+            <script src="mal.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>

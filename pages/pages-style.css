@@ -1,5 +1,6 @@
-html {
-    background: #585b5e;
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .search {
@@ -11,11 +12,12 @@ html {
     height: auto;
     color: #fff;
     text-align: center;
-    padding: 6px;
+    padding: 10px;
     font-size: 1.3rem;
     background: #273036;
     width: 100px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .form {
@@ -29,4 +31,114 @@ html {
     border: red solid;
     outline: none;
     background: #fff;
+}
+
+.test {
+    background-color: #273036;
+}
+
+.card {
+    transition: 500ms;
+    
+}
+
+.card:hover {
+    transform: scale(1.02);
+    
+}
+
+.body {
+    background-color: #9ca0a4;
+}
+
+.container-konata {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.drago-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.drago-row > * {
+    flex-basis: 18rem;
+    flex-shrink: 0;
+}
+
+
+
+@media screen and (max-width:767px) {
+
+
+    .card {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .container-konata {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.navbar-mal {
+    padding-bottom: 5rem;
+}
+
+/* MY ANIME LIST */
+
+.mal {
+    background: #585b5e;
+}
+
+.container .card-mal {
+    position: relative;
+    max-width: 300px;
+    height: 230px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card-mal:hover {
+    height: 500px;
+}
+
+.container .card-mal .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card-mal .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card-mal .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card-mal:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
 }
