@@ -1,22 +1,5 @@
 const anime_url = "https://api.jikan.moe/v3"
 
-/* 
-let addToList = document.getElementsByClassName('add')
-
-
-for (let i = 0; i < addToList.length; i++) {
-    let button = addToList[i]
-    button.addEventListener('click', function(event) {
-        let buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-    })
-}
-
- */
-
-
-
-
 function searchAnime(event){
 
     event.preventDefault();

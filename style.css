@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* SWUP */
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating.transition-fade {
+    opacity: 0;
+}
+
+/* SWUP */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -28,6 +40,16 @@ ul li a{
     transition: 500ms;
 }
 ul li a:hover {
+    color: red;
+}
+
+.title-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 500ms ease-in-out;
+}
+
+.title-link:hover {
     color: red;
 }
 

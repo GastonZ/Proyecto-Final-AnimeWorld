@@ -3,6 +3,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.title-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 500ms ease-in-out;
+}
+
+.title-link:hover {
+    color: red;
+}
+
 .search {
     display: flex;
     justify-content: center;
@@ -60,8 +70,7 @@ body {
 .drago-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+    flex-wrap: wrap;
     justify-content: stretch;
 }
 
@@ -70,9 +79,7 @@ body {
     flex-shrink: 0;
 }
 
-
-
-@media screen and (max-width:767px) {
+@media screen and (max-width:992px) {
 
 
     .card {
@@ -83,6 +90,7 @@ body {
     .container-konata {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     
 }
@@ -93,10 +101,20 @@ body {
 
 /* MY ANIME LIST */
 
+.card-mal .content p {
+    font-size: 1rem;
+}
+
+
 .mal {
     background: #585b5e;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
 .container .card-mal {
     position: relative;
     max-width: 300px;
@@ -109,7 +127,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 .container .card-mal:hover {
-    height: 500px;
+    height: 450px;
 }
 
 .container .card-mal .imgBx {
@@ -142,3 +160,132 @@ body {
     margin-top: -40px;
     transition-delay: 0.3s;
 }
+
+.shop {
+    height: 70vh;
+}
+
+/* Boton del carrito */
+
+.btn-drago {
+    float: right;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    border: #273036;
+    transition: 500ms ease-in-out;
+}
+
+.btn-drago:hover {
+    padding: 15px;
+    font-size: 20px;
+    background: #273036;
+    color: #fff;
+}
+
+/* Carrito modal */
+
+.modal-content {
+    background: #585b5e;
+}
+
+.modal-header .modal-title {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.esp-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.esp-container .esp {
+    color: #fff;
+}
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+

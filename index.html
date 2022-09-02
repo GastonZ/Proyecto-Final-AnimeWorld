@@ -17,19 +17,34 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </button>
-            <h2 class="title-sm text-light d-sm-none">anime world</h2>
+            <h2 class="title-sm text-light d-sm-none"><a class="title-link" href="index.html">anime world</a> </h2>
         </div>
         <div class="nav d-none d-sm-block">
             <div class="navbar">
-                <h1 class="title">Anime world</h1>
+                <h1 class="title"><a class="title-link" href="index.html">Anime world</a></h1>
                 <ul class="row">
-                    <li id="links" class="links col d-flex"><a href="pages/about.html">About</a></li>
-                    <li id="links" class="links col d-flex"><a href="pages/shop.html">Shop</a></li>
-                    <li id="links" class="links col d-flex"><a href="pages/anime.html">Anime</a></li>
+                    <li id="links" class="links col d-flex"><a href="/pages/about.html">About</a></li>
+                    <li id="links" class="links col d-flex"><a href="/pages/shop.html">Shop</a></li>
+                    <li id="links" class="links col d-flex"><a href="/pages/anime.html">Anime</a></li>
                 </ul>
             </div>
         </div>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="offcanvas offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header">
+              <h2 class="offcanvas-title" id="offcanvasResponsiveLabel">ANIME WORLD</h5>
+              <button type="button" class="btn btn-light btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-content">
+              <ul class="links-canvas col">
+                  <li id="links" class="links-sm col d-flex"><a href="">About</a></li>
+                  <li id="links" class="links-sm col d-flex"><a href="">Shop</a></li>
+                  <li id="links" class="links-sm col d-flex"><a href="./pages/anime.html">Anime</a></li>
+              </ul>
+          </div>
+      </div>
+    </header>
+      <main id="swup" class="transition-fade">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <p class="click text" id="clickme">Click me
                     <span id="flecha" class="flecha derecha"></span>
@@ -54,21 +69,11 @@
             </button>
           </div>
         </div>
-        <div class="offcanvas offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-            <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="offcanvasResponsiveLabel">ANIME WORLD</h5>
-                <button type="button" class="btn btn-light btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-content">
-                <ul class="links-canvas col">
-                    <li id="links" class="links-sm col d-flex"><a href="">About</a></li>
-                    <li id="links" class="links-sm col d-flex"><a href="">Waifus</a></li>
-                    <li id="links" class="links-sm col d-flex"><a href="./pages/anime.html">Anime</a></li>
-                </ul>
-            </div>
-        </div>
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,160L720,288L1440,0L1440,320L720,320L0,320Z"></path></svg>
-    </header>
+      
+      
+      </main>
+    <section class="tabs">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
