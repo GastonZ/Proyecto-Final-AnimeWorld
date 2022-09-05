@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/4a6cf95f22.js" crossorigin="anonymous"></script>
     <title>Anime World</title>
 </head>
 <body>
     <header>
         <div class="canvas">
-            <button class="hamburger btn d-sm-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+            <button class="hamburger btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </button>
-            <h2 class="title-sm text-light d-sm-none"><a class="title-link" href="index.html">anime world</a> </h2>
+            <h2 class="title-sm text-light"><a class="title-link" href="index.html">anime world</a> </h2>
         </div>
-        <div class="nav d-none d-sm-block">
+        <div class="nav">
             <div class="navbar">
                 <h1 class="title"><a class="title-link" href="index.html">Anime world</a></h1>
-                <ul class="row">
-                    <li id="links" class="links col d-flex"><a href="/pages/about.html">About</a></li>
-                    <li id="links" class="links col d-flex"><a href="/pages/shop.html">Shop</a></li>
-                    <li id="links" class="links col d-flex"><a href="/pages/anime.html">Anime</a></li>
+                <ul class="row d-flex">
+                    <li id="links" class="links col"><a href="/pages/about.html">About</a></li>
+                    <li id="links" class="links col"><a href="/pages/shop.html">Shop</a></li>
+                    <li id="links" class="links col"><a href="/pages/anime.html">Anime</a></li>
                 </ul>
             </div>
         </div>
@@ -36,19 +38,21 @@
           </div>
           <div class="offcanvas-content">
               <ul class="links-canvas col">
-                  <li id="links" class="links-sm col d-flex"><a href="">About</a></li>
-                  <li id="links" class="links-sm col d-flex"><a href="">Shop</a></li>
-                  <li id="links" class="links-sm col d-flex"><a href="./pages/anime.html">Anime</a></li>
+                  <li id="links" class="links-sm col d-flex"><a href="/pages/about.html">About</a></li>
+                  <li id="links" class="links-sm col d-flex"><a href="/pages/shop.html">Shop</a></li>
+                  <li id="links" class="links-sm col d-flex"><a href="/pages/anime.html">Anime</a></li>
               </ul>
           </div>
       </div>
     </header>
-      <main id="swup" class="transition-fade">
+      <main class="transition-fade">
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <p class="click text" id="clickme">Click me
+                <a href="#section-2">
+                  <p class="click text" id="clickme">Click me
                     <span id="flecha" class="flecha derecha"></span>
                 </p>
+                </a>
               <div class="carousel-item active" data-bs-interval="2000">
                 <img src="imagenes/Anime1.png" class="d-block w-100" alt="Your Name">
               </div>
@@ -69,11 +73,54 @@
             </button>
           </div>
         </div>
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,160L720,288L1440,0L1440,320L720,320L0,320Z"></path></svg>
-      
-      
+  
+        <section id="section-2" class="main-part2">
+          <div class="text-center p-5 text-light">
+            <h2>What is <strong>Anime World</strong>?</h2>
+           </div>
+          <div class="section-2">
+              <div class="content-main">
+                  <p class="content-text text-light fs-3">Anime World is a little project i've made in order to practice
+                    my Javascript and design skills, and also to share my love for anime !  
+                    <br>
+                    <br>
+                    <strong>Now, click on Mirai, the girl next to the text !</strong>
+                  </p>
+              </div>  
+              <div class="Mirai">
+                <a href="#tab-1-content">
+                   <img  class="mirai" src="imagenes/Mirai.png" alt="Mirai Kyokai no Kanata" height="520" width="300">
+                </a>
+                   
+              </div>
+          </div>
+<!--           <section class="tab-content"> -->
+              <div class="tab-container pt-5 gap-5">
+                <div id="tab-1-content" class="tab col-3"><i class="fa-solid fa-globe"></i>
+                  <h2>About page</h2>
+                  <p class="fs-4 pt-5 text-center">Just a page, about the page</p>
+                  <a class="btn btn-danger" href="">VISIT</a>
+                </div>
+                <div id="tab-2-content" class="tab col-4"><i class="fa-brands fa-shopify"></i>
+                  <h2>Konata-Shop</h2>
+                  <p class="fs-4 pt-5 text-center">An E-Commerce shop with a shopping cart</p>
+                  <a class="btn btn-danger" href="/pages/shop.html">VISIT</a>
+                </div>
+                <div id="tab-3-content" class="tab col-4"><i class="fa-brands fa-searchengin"></i>
+                  <h2>Anime-Search-Engine</h2>
+                  <p class="fs-4 pt-5 text-center">Uses an API so you can search all kind of Animes</p>
+                  <a class="btn btn-danger" href="/pages/anime.html">VISIT</a>
+                </div>
+            </div>
+          </section>
+        </section>
+        <footer class="footer">
+            <div class="links text-light fs-1"><a href=""><i class="fa-brands fa-github"></i></a></div>
+            <div class="links text-light fs-1"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+        </footer>
       </main>
-    <section class="tabs">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

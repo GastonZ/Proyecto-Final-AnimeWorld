@@ -20,6 +20,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.canvas {
+    display: none;
+}
+
 .nav {
     background: #273036;
     height: 10vh;
@@ -41,6 +45,14 @@ ul li a{
 }
 ul li a:hover {
     color: red;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.links {
+    list-style: none;
 }
 
 .title-link {
@@ -133,12 +145,15 @@ ul li a:hover {
 } 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     
     .canvas {
         display: flex;
         padding: 10px;
         background: #273036;
+    }
+    .nav {
+        height: 2vh;
     }
 
     .hamburger {
@@ -175,4 +190,114 @@ ul li a:hover {
     .links-canvas .links-sm:hover{
         background: #273036;
     }
+
+    .links {
+        opacity: 0;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-main {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .content-main .content-text {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding: 5px
+    }
+
+    .Mirai {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tab-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #tab-1-content,
+    #tab-2-content,
+    #tab-3-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Main part-2 */
+
+.section-2 {
+    display: flex;
+}
+
+.main-part2 {
+    background-color: #273036;
+}
+
+.content-main {
+    width: 65%;
+}
+.content-main .content-text {
+    text-align: center;
+    padding: 3rem;
+    padding-top: 100px;
+    width: 80%;
+}
+.Mirai {
+    width: 35%;
+}
+
+.tab-container {
+    opacity: 0;
+    padding-left: 25px;
+    transition: 1000ms ease-in;
+    padding-bottom: 25px;
+    display: flex;
+    text-align: center;
+} 
+.tabs-show {
+    opacity: 1;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.tab {
+    font-size: 3rem;
+    border-radius: 5px;
+    color: #fff;
+    transition: 300ms ease-in-out;
+}
+
+.tab:hover {
+    background-color: #fff;
+    color: #273036;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background: #394146;
+}
+
+.footer .footer-content {
+    display: flex;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
 }
