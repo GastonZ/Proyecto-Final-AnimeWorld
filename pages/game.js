@@ -35,7 +35,7 @@ startBtn.addEventListener('click', startGame)
 
 function startGame(){
     setTimeout(function(){
-        bullet.classList.toggle('animate-bullet')
+        bullet.classList.add('animate-bullet')
     },3000)
 
     cargarSegundo()
@@ -61,3 +61,17 @@ function cargarSegundo() {
 reset.addEventListener('click', ()=>{
     location.reload();
 })
+
+function increaseBulletSpeed() {
+    setTimeout(function(){
+        bullet.classList.remove('animate-bullet')
+        bullet.classList.add('animate-bullet2')
+    },7000)
+}
+
+function increaseBulletSpeed2() {
+    setTimeout(function(){
+        bullet.classList.remove('animate-bullet2')
+        bullet.classList.add('animate-bullet3')
+    },12000)
+}

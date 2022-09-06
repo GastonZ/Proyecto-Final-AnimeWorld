@@ -24,7 +24,8 @@ body {
     width: 700px;
     height: 350px;
     border: 1px solid black;
-
+    border-radius: 5px;
+    background: #273036;
 }
 
 #chisato {
