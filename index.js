@@ -12,7 +12,7 @@ function showTabs(e) {
         style: {
             background: "linear-gradient(45deg, #292929, #1a2f3f)",
           },
-        duration: 5000
+        duration: 3000
         
         }).showToast();
 

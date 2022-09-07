@@ -68,3 +68,43 @@ body {
 
 /* INTENTO DE ANIMACION DE SPRITE */
 
+.saludo {
+    height: 216px;
+    width: 98px;
+    background: url(img-pages/Saludando.png);
+    margin: 0 auto;
+    margin-top: 20px;
+    animation: saludar 1s steps(13) infinite;
+}
+
+
+@keyframes saludar{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -1280px;
+    }
+}
+
+.despedida {
+    color: #fff;
+    text-align: center;
+}
+
+.footer-about {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background: #273036;
+}
+
+.footer-about .footer-content {
+    display: flex;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}

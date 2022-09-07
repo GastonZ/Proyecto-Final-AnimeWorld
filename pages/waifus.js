@@ -4,9 +4,14 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+carritoPrecio = [0]
+carritoTitulo = [0]
+
 
 
 function ready() {
+
+        loadCart();
 
         let removeCartItemButtons = document.getElementsByClassName('btn-danger');
         console.log(removeCartItemButtons)
@@ -32,6 +37,24 @@ function ready() {
         document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+function loadCart() {
+
+    carritoPrecio = localStorage.getItem("precio")
+    carritoTitulo = localStorage.getItem("titulo")
+
+    if (carritoTitulo == null || carritoPrecio == null){
+        carritoTitulo = []
+        carritoPrecio = []
+        return
+    }
+    carritoPrecio = JSON.parse(carritoPrecio)
+    carritoTitulo = JSON.parse(carritoTitulo)
+
+    for (let i = 0; i < carritoTitulo.lenght; i++) {
+        addItemToCart(carritoTitulo[i], carritoPrecio[i])
+    }
+}
+
 function purchaseClicked() {
     Swal.fire({
         title: 'Success!',
@@ -45,6 +68,8 @@ function purchaseClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
+
+    localStorage.clear();
 }
 
 function removeCartItem(event) {
@@ -80,6 +105,12 @@ function addToCartClicked(event) {
         duration: 1000
         
         }).showToast();
+
+        carritoPrecio.push(price)
+        carritoTitulo.push(title)
+
+        localStorage.setItem("precio", JSON.stringify(carritoPrecio))
+        localStorage.setItem("titulo", JSON.stringify(carritoTitulo))
 }
 
 function addItemToCart(title, price, imageSrc) {
