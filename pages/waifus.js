@@ -1,8 +1,6 @@
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
-} else {
-    ready()
-}
+
+document.readyState == 'loading' ? document.addEventListener('DOMContentLoaded', ready) : ready()
+
 
 carritoPrecio = [0]
 carritoTitulo = [0]
@@ -83,7 +81,6 @@ function quantityChanged(event) {
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
-    updateCartTotal()
 }
 
 function addToCartClicked(event) {
